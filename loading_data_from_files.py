@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x, y = np.loadtxt('example.txt', delimiter=',', unpack= True)
+
+plt.plot(x, y, label='Loading files')
+
+
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend('Loaded data from files')
+plt.show()
